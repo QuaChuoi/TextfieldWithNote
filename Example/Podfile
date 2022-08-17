@@ -1,0 +1,6 @@
+use_frameworks!
+target 'TextfieldWithNote_Tests' do
+  pod 'TextfieldWithNote', :path => '../'
+  
+  
+end
