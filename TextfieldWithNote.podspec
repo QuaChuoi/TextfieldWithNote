@@ -28,7 +28,7 @@ A custom textfield with slide down/ scroll up note depend on custom validate fun
   s.source           = { :git => 'https://github.com/QuaChuoi/TextfieldWithNote.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '4.0'
 
   s.source_files = 'TextfieldWithNote/Classes/**/*'

@@ -129,8 +129,8 @@ class InputTextField: UIView {
         
             if let newFontSize = fontSize {
                 field_Input.font = field_Input.font?.withSize(newFontSize)
-                self.maxContentHieght = CGFloat(Float(newFontSize-16) + self.maxContentHieght)
-                self.minContentHieght = CGFloat(Float(newFontSize-16) + self.minContentHieght)
+                self.maxContentHieght = CGFloat(Float(newFontSize-16) + Float(self.maxContentHieght))
+                self.minContentHieght = CGFloat(Float(newFontSize-16) + Float(self.minContentHieght))
             }
             
             self.renewHeightConstraint(heightConstraint: &(UITextfieldWithNoteView.heightConstraint)!, view: UITextfieldWithNoteView)
