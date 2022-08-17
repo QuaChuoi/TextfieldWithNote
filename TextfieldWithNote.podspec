@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TextfieldWithNote'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TextfieldWithNote.'
+  s.summary          = 'TextfieldWithNote - custom textfield with message note'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A custom textfield with slide down/ scroll up note depend on custom validate function.
                        DESC
 
   s.homepage         = 'https://github.com/QuaChuoi/TextfieldWithNote'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'QuaChuoi' => 'huynhvngochien@brickmate.kr' }
+  s.author           = { 'Huynh Van Ngoc Hien' => 'huynhvngochien@brickmate.kr' }
   s.source           = { :git => 'https://github.com/QuaChuoi/TextfieldWithNote.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'TextfieldWithNote/Classes/**/*'
   
