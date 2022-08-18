@@ -19,6 +19,31 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'TextfieldWithNote'
 ```
+## Usage
+Swift
+- add an UIView, change it's custom class to InputTextField and reference to assitant.
+- view's hieght constraint must be set (active)
+ 
+```swift
+    override func viewDidLoad() {
+        InputTextField.initialize(UITextfieldWithNoteView: <#T##UIView#>, errorNotes: <#T##[String]?#>, validateFunc: <#T##(() -> Int)?##(() -> Int)?##() -> Int#>)
+    }
+```
+ UITextfieldWithNoteView: Custom InputTextField's view
+ errorNotes: Note contents; errorNote[0] use for blank field message
+ validateFunc: Your custom validate func; return 0 if no issue; return Int value to show corresponding note content.
+ 
+Full custom usage:
+```swift
+    override func viewDidLoad() {
+        InputTextField.initialize(UITextfieldWithNoteView: <#T##UIView#>, fontSize: <#T##CGFloat?#>, noteTextColor: <#T##UIColor?#>, placeHolder: <#T##String#>, errorNotes: <#T##[String]?#>, isSecureTextField: <#T##Bool#>, isBlankField: <#T##Bool#>, validateFunc: <#T##(() -> Int)?##(() -> Int)?##() -> Int#>)
+    }
+``` 
+ fontSize: custom textField's font size
+ noteTextColor: note text color
+ placeHolder: textfield's placeholder
+ isSecureTextField: true - to enable secure text and Show/Hide button
+ isBlankField: true - to allow textfield can be blank (no message)
 
 ## Author
 
