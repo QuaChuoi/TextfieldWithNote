@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TextfieldWithNote'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'TextfieldWithNote - custom textfield with message note'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ A custom textfield with slide down/ scroll up note depend on custom validate fun
   s.ios.deployment_target = '11.0'
   s.swift_version = '4.0'
 
-  s.source_files = 'TextfieldWithNote/Classes/**/*'
+  s.source_files = 'TextfieldWithNote/Classes'
   
   # s.resource_bundles = {
   #   'TextfieldWithNote' => ['TextfieldWithNote/Assets/*.png']
