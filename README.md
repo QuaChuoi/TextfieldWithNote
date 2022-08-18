@@ -5,11 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/TextfieldWithNote.svg?style=flat)](https://cocoapods.org/pods/TextfieldWithNote)
 [![Platform](https://img.shields.io/cocoapods/p/TextfieldWithNote.svg?style=flat)](https://cocoapods.org/pods/TextfieldWithNote)
 
-## Example
+## ScreenShot
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![](https://github.com/QuaChuoi/TextfieldWithNote/blob/master/ezgif.com-gif-maker.gif)
 
 ## Requirements
+
+iOS > 12.0
 
 ## Installation
 
@@ -26,24 +28,37 @@ Swift
  
 ```swift
     override func viewDidLoad() {
-        InputTextField.initialize(UITextfieldWithNoteView: <#T##UIView#>, errorNotes: <#T##[String]?#>, validateFunc: <#T##(() -> Int)?##(() -> Int)?##() -> Int#>)
+        InputTextField.initialize(
+            UITextfieldWithNoteView: UIView, 
+            errorNotes: [String]?, 
+            validateFunc: (() -> Int)?
+        )
     }
 ```
- UITextfieldWithNoteView: Custom InputTextField's view
- errorNotes: Note contents; errorNote[0] use for blank field message
- validateFunc: Your custom validate func; return 0 if no issue; return Int value to show corresponding note content.
+- UITextfieldWithNoteView: Custom InputTextField's view
+- errorNotes: Note contents; errorNote[0] use for blank field message
+- validateFunc: Your custom validate func; return 0 if no issue; return Int value to show corresponding note content.
  
 Full custom usage:
 ```swift
     override func viewDidLoad() {
-        InputTextField.initialize(UITextfieldWithNoteView: <#T##UIView#>, fontSize: <#T##CGFloat?#>, noteTextColor: <#T##UIColor?#>, placeHolder: <#T##String#>, errorNotes: <#T##[String]?#>, isSecureTextField: <#T##Bool#>, isBlankField: <#T##Bool#>, validateFunc: <#T##(() -> Int)?##(() -> Int)?##() -> Int#>)
+        InputTextField.initialize(
+            UITextfieldWithNoteView: UIView, 
+            fontSize: CGFloat?, 
+            noteTextColor: UIColor?, 
+            placeHolder: String, 
+            errorNotes: [String]?, 
+            isSecureTextField: Bool, 
+            isBlankField: Bool, 
+            validateFunc: (() -> Int)?
+        )
     }
 ``` 
- fontSize: custom textField's font size
- noteTextColor: note text color
- placeHolder: textfield's placeholder
- isSecureTextField: true - to enable secure text and Show/Hide button
- isBlankField: true - to allow textfield can be blank (no message)
+- fontSize: custom textField's font size
+- noteTextColor: note text color
+- placeHolder: textfield's placeholder
+- isSecureTextField: true - to enable secure text and Show/Hide button
+- isBlankField: true - to allow textfield can be blank (no message)
 
 ## Author
 
