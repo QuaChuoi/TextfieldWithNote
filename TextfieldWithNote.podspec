@@ -31,7 +31,7 @@ A custom textfield with slide down/ scroll up note depend on custom validate fun
   s.ios.deployment_target = '11.0'
   s.swift_version = '4.0'
 
-  s.source_files = 'TextfieldWithNote/Classes'
+  s.source_files = 'TextfieldWithNote/Classes/*'
   
   # s.resource_bundles = {
   #   'TextfieldWithNote' => ['TextfieldWithNote/Assets/*.png']
